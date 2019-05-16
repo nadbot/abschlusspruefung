@@ -1,0 +1,22 @@
+#Teste Äquivalenzklasse 5 Fläche = 0
+Fläche der Staaten
+# Staat Fläche Längengrad Breitengrad
+D    0    10.0    51.3
+NL   42      5.3     52.2
+B    33      4.8     50.7
+L    3       6.1     49.8
+F    544     2.8     47.4
+CH   41      8.2     46.9
+A    84      14.2    47.6
+CZ   79      15.3    49.8
+PL   313     18.9    52.2
+DK   43      9.6     56.0
+# Nachbarschaften
+D:  NL  B   L   F   CH  A  CZ   PL  DK
+NL: B
+B:  L   F
+L:  F
+F:  CH
+CH: A
+A:  CZ
+CZ: PL

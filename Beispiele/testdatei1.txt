@@ -1,0 +1,26 @@
+Fläche der Staaten
+# Staat Fläche Längengrad Breitengrad
+D    357     10.0    51.3  #Beliebiger String (Testfall 1)
+D    42     9    11.3      #Doppelter Name (Testfall 2)
+NL   42      5.3     52.2  #K>0 (Testfall 3)
+B    33      4.8     50.7  #X in Range (Testfall 7)
+L    3       6.1     49.8  #Y in Range (Testfall 10)
+F    544     2.8     47.4
+CH   41      8.2     46.9
+A    84      14.2    47.6
+CZ   79      15.3    49.8
+PL   313     18.9    52.2
+DK   43      9.6     56.0
+USA   23      7.2     32.9 #Kein Nachbar (Testfall 19)
+#Alle Länder an verschiedenen Stellen (Testfall 13)
+# Nachbarschaften
+D:  NL  B   L   F   CH  A  CZ   PL  DK  #Beliebige Anzahl Nachbarn (Testfall 15)
+NL: B False #Land false existiert nicht (Testfall 16)
+B:  L   F
+L:  F
+L:  F #Land L mehrfach (Testfall 17)
+F:  CH  CH  #Nachbar CH mehrfach (Testfall 18)
+CH: A
+A:  CZ
+CZ: PL
+
